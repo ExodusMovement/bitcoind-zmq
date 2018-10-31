@@ -71,14 +71,14 @@ The `BitcoindZMQ({...}, <opts>)` Class accepts in his constructor `topic -> zmq 
 
 Also refer to the example for usage.
 
-*Bitcoind* available events are, but you can add only the ones you want or new one for other coins:
+*Bitcoind* available events are these below. You can add new coins' events or get rid of those you don't need when instantiating the Class:
 
 - `hashblock`
 - `hashtx`
 - `rawblock`
 - `rawtx`
 
-Reserved events and namespaces:
+**Reserved events and namespaces**:
 
 - `error:*`
 - `close:*`
@@ -86,7 +86,7 @@ Reserved events and namespaces:
 - `disconnect:*`
 - `retry:*`
 
-example: `error:*` will catch every node error (`error:hashblock`, `error:hashtx`, and so on...)
+*example*: `error:*` will catch every node error (`error:hashblock`, `error:hashtx`, and so on...)
 
 ### Debug
 
