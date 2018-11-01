@@ -36,3 +36,7 @@ btcd.on('error:*', (err, type) => {
 btcd.on('retry:*', (type, attempt) => {
   console.log(`type: ${type}, retry attempt: ${attempt}`)
 })
+
+btcd.on('close:*', (err, type) => {
+  console.log(`close ${type}`, err || '')
+})
