@@ -80,11 +80,10 @@ Also refer to the example for usage.
 
 **Reserved events and namespaces**:
 
-- `error:*`
-- `close:*`
-- `connect:*`
-- `disconnect:*`
-- `retry:*`
+- `error:*` event fired with `Error`
+- `close:*`: event fired with `Error` if any, and `nodeType`.
+- `connect:*`: event fired with `Uri`, `nodeType`.
+- `retry:*`: event fired with `nodeType`, `attempt`
 
 *example*: `error:*` will catch every node error (`error:hashblock`, `error:hashtx`, and so on...)
 
