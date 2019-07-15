@@ -1,6 +1,6 @@
 {
   "name": "bitcoind-zmq",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get ZMQ notifications from bitcoind-like coins",
   "main": "index.js",
   "scripts": {
